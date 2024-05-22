@@ -59,10 +59,10 @@ params:
     buttons:
       - name: CV/Resume
         url: "docs/resume.pdf"
-      - name: Projects
-        url: projects/
-      - name: Articles
-        url: articles/
+      # - name: Projects
+      #   url: projects/
+      # - name: Articles
+      #   url: articles/
     content: >
       👋 **Hi!**
 
@@ -107,26 +107,26 @@ menu:
       name: CV/Resume
       url: "docs/resume.pdf"
       weight: 5
-    - identifier: projects
-      name: Projects
-      url: projects/
-      weight: 10
-    - identifier: articles
-      name: Articles
-      url: articles/
-      weight: 15
-    - identifier: search
-      name: 🔎
-      url: search/
-      weight: 20
-    - identifier: archives
-      name: 📂
-      url: archives
-      weight: 25
-    - identifier: tags
-      name: 🏷️
-      url: tags/
-      weight: 30
+    # - identifier: projects
+    #   name: Projects
+    #   url: projects/
+    #   weight: 10
+    # - identifier: articles
+    #   name: Articles
+    #   url: articles/
+    #   weight: 15
+    # - identifier: search
+    #   name: 🔎
+    #   url: search/
+    #   weight: 20
+    # - identifier: archives
+    #   name: 📂
+    #   url: archives
+    #   weight: 25
+    # - identifier: tags
+    #   name: 🏷️
+    #   url: tags/
+    #   weight: 30
 
 
 
