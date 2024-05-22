@@ -1,0 +1,142 @@
+baseURL: "https://examplesite.com/"
+title: Seah Shao Xuan
+paginate: 5
+theme: PaperMod
+
+enableRobotsTXT: true
+buildDrafts: false
+buildFuture: false
+buildExpired: false
+
+minify:
+  disableXML: true
+  minifyOutput: true
+
+params:
+  env: production 
+  title: Seah Shao Xuan
+  description: "Seah Shao Xuan's Personal Website"
+  # keywords: [Blog, Portfolio, PaperMod]
+  author: Shao Xuan
+  DateFormat: "January 2, 2006"
+  defaultTheme: auto # dark, light
+  disableThemeToggle: false
+
+  ShowReadingTime: false
+  ShowShareButtons: false
+  ShowPostNavLinks: true
+  ShowBreadCrumbs: true
+  ShowCodeCopyButtons: true
+  ShowWordCount: true
+  ShowRssButtonInSectionTermList: false
+  UseHugoToc: true
+  disableSpecial1stPost: false
+  disableScrollToTop: false
+  comments: false
+  hidemeta: false
+  hideSummary: false
+  showtoc: true
+  tocopen: true
+
+#   assets:
+#     # disableHLJS: true # to disable highlight.js
+#     # disableFingerprinting: true
+#     favicon: "<link / abs url>"
+#     favicon16x16: "<link / abs url>"
+#     favicon32x32: "<link / abs url>"
+#     apple_touch_icon: "<link / abs url>"
+#     safari_pinned_tab: "<link / abs url>"
+
+
+  # profile-mode
+  profileMode:
+    enabled: true # needs to be explicitly set
+    title: Seah Shao Xuan
+    imageUrl: "images/profile_photo.jpg"
+    imageWidth: 200
+    imageHeight: 200
+    imageTitle: profile photo
+    buttons:
+      - name: CV/Resume
+        url: "docs/resume.pdf"
+      - name: Projects
+        url: projects/
+      - name: Articles
+        url: articles/
+    content: >
+      👋 **Hi!**
+
+      I'm a first year master's student at **Carnegie Mellon University** working on machine learning, computer vision and more recently, generative models for image synthesis.
+
+      I was previously a data engineer working at [Sea Labs](https://www.sea.com/) before moving to Pittsburgh for my graduate studies.
+
+      I'm currently on the job market and looking for a full-time position that best aligns with my interest in generative models.
+
+  socialIcons:
+    - name: linkedin
+      url: "https://linkedin.com/in/seahshaoxuan/"
+    - name: github
+      url: "https://github.com/seahhorse"
+
+
+  # editPost:
+  #   URL: "https://github.com/<path_to_repo>/content"
+  #   Text: "Suggest Changes" # edit text
+  #   appendFilePath: true # to append file path to Edit link
+
+  # for search
+  # https://fusejs.io/api/options.html
+  fuseOpts:
+    isCaseSensitive: false
+    shouldSort: true
+    location: 0
+    distance: 1000
+    threshold: 0.4
+    minMatchCharLength: 0
+    limit: 10 # refer: https://www.fusejs.io/api/methods.html#search
+    keys: ["title", "permalink", "summary", "content"]
+
+outputs:
+  home:
+    - HTML
+    - JSON
+
+menu:
+  main:
+    - identifier: resume
+      name: CV/Resume
+      url: "docs/resume.pdf"
+      weight: 5
+    - identifier: projects
+      name: Projects
+      url: projects/
+      weight: 10
+    - identifier: articles
+      name: Articles
+      url: articles/
+      weight: 15
+    - identifier: search
+      name: 🔎
+      url: search/
+      weight: 20
+    - identifier: archives
+      name: 📂
+      url: archives
+      weight: 25
+    - identifier: tags
+      name: 🏷️
+      url: tags/
+      weight: 30
+
+
+
+# # Read: https://github.com/adityatelange/hugo-PaperMod/wiki/FAQs#using-hugos-syntax-highlighter-chroma
+# pygmentsUseClasses: true
+# markup:
+#   highlight:
+#     noClasses: false
+#     # anchorLineNos: true
+#     # codeFences: true
+#     # guessSyntax: true
+#     # lineNos: true
+#     # style: monokai
