@@ -37,6 +37,7 @@ params:
   hideSummary: false
   showtoc: true
   tocopen: true
+  math: true
 
 #   assets:
 #     # disableHLJS: true # to disable highlight.js
@@ -133,7 +134,22 @@ menu:
     #   url: tags/
     #   weight: 30
 
-
+markup:
+  goldmark:
+    extensions:
+      passthrough:
+        delimiters:
+          block:
+          - - \[
+            - \]
+          - - $$
+            - $$
+          inline:
+          - - \(
+            - \)
+          - - $
+            - $
+        enable: true
 
 # # Read: https://github.com/adityatelange/hugo-PaperMod/wiki/FAQs#using-hugos-syntax-highlighter-chroma
 # pygmentsUseClasses: true
