@@ -2,7 +2,7 @@
 author: ['Seah Shao Xuan']
 title: 'Do You Speak My Language? A Panel Data Study'
 date: 2021-10-21
-draft: true
+draft: false
 cover: 
     image: "images/cover_language.jpg"
 description: "Understanding the Impact of English Proficiency on Employment Outcomes"
