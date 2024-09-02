@@ -2,9 +2,9 @@
 author: ['Seah Shao Xuan', 'Justin Lo Tian Wen']
 title: 'Unlocking the Power of Music Genre Classification'
 date: 2022-04-27
-draft: true
+draft: false
 cover: 
-    image: "images/manga109.png"
+    image: "images/sheet_music.png"
 description: "How Music Streaming Services Are Getting Smarter"
 summary: "How Music Streaming Services Are Getting Smarter"
 tags: ["audio classification", "computer vision", "spectrographs", "convolutional neural network", "recurrent neural network", "long short term memory"]
